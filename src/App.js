@@ -28,7 +28,7 @@ const App = () => {
 
   // El estado de mostrarCompletadas
   const [mostrarCompletadas, cambiarMostrarCompletadas] = useState(configMostrarCompletadas);
-
+// Con esto al recargar el navegador me muestra lo que ya tenia
   useEffect(() => {
     localStorage.setItem('mostrarCompletadas', mostrarCompletadas.toString());
   }, [mostrarCompletadas]);
